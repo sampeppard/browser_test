@@ -28,11 +28,19 @@ $(document).ready(function() {
 
 
     // tooltip
+    // 
+	// $(".learn-more").hover(function(){
+    //     $(this).children().show();
+    //     }, function(){
+    //     $(this).children().hide();
+    // });
 
-	$(".learn-more").hover(function(){
-        $(this).children().css("display", "block");
-        }, function(){
-        $(this).children().css("display", "none");
+    $(".learn-more").on("mouseenter", function() {
+        $(this).children().show();
+    });
+
+    $(".learn-more").on("mouseleave", function() {
+        $(this).children().hide();
     });
 
     // popout
