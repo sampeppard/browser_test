@@ -1,0 +1,494 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------------------------------
+	Custom Styles
+-------------------------------------------------------*/
+
+/* Base Styles ----------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: arial, helvetica, sans-serif;
+	background-color: #000;
+}
+
+/* Header Styles ----------------------*/
+
+header {
+	width: 100%;
+	height: 200px;
+	padding: 30px 0;
+	border-bottom: solid 1px #999999;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+header h1 {
+	margin: 15px 0;
+	text-align: center;
+	font-size: 1.1rem;
+	letter-spacing: 5px;
+}
+
+.nav-wrap {
+	width: 70%;
+	margin: 0 15%;
+}
+
+.main-nav {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	padding: 0;
+}
+
+a.nav-item {
+	width: auto;
+	height: 25px;
+	padding: 5px;
+	font-size: 0.8rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+}
+
+.main-nav a:hover {
+	margin: -2px;
+	border: solid 2px skyblue;
+	color: skyblue;
+}
+
+
+.nav-wrap h1 {
+	text-align: center;
+	margin: 1em 0;
+	padding: 0;
+	font-size: 1.1em;
+	letter-spacing: 5px;
+}
+
+/* Speed Select Styles ----------------------*/
+
+section.speed-select {
+	width: 100%;
+	height: 250px;
+	padding-top: 70px;
+	background-color: #ffffff;
+
+}
+
+section.speed-select p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+form {
+	width: 90%;
+	margin: 30px 5%;
+}
+
+/* meter styles */
+
+.meter {
+	position: relative;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.meter label {
+	position: relative;
+	display: inline-block;
+	width: 0.3%;
+	height: 25px;
+	margin: 0 11.77%;
+	background-color: #000000;
+	text-align: center;
+	font-size: 0.7rem;
+	z-index: 2;
+}
+
+.meter label > span {
+	position: absolute;
+	display: inline;
+	margin: 40px 0 0 -13px;
+}
+
+#awesome {
+	margin: 40px 0 0 -24px;
+}
+
+.meter label > input {
+	position: absolute;
+	margin: 60px 0 0 -6px;
+	cursor: pointer;
+}
+
+
+.thermometer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 25px;
+	border: solid 1px #000000;
+	border-radius: 20px;
+}
+
+.mercury {
+	height: 100%;
+	border-radius: 20px;
+	background-color: #96cfed;
+}
+
+/* slider */
+
+.slider {
+	position: absolute;
+	top: -2px;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: solid 5px #349dd4;
+	background-color: #000000;
+	z-index: 2;
+}
+
+/* Main Content Styles ----------------------*/
+
+/* Down Arrow */
+
+#down-arrow {
+	width: 0;
+  	height: 0;
+  	margin: 0 auto;
+  	border-left: 20px solid transparent;
+  	border-right: 20px solid transparent;
+  	border-top: 20px solid #fff;
+}
+
+/* Tiles */
+
+.content-wrapper {
+	width: 90%;
+	margin: 10px 5%;
+}
+
+.tile-wrapper {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-tile {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	width: 100%;
+	margin: 15px 0;
+	padding: 30px 20px;
+}
+
+.content-tile p { font-size: 0.8rem; }
+.content-tile h3 { font-size: 1.1rem; }
+
+.column-img {
+	display: flex;
+}
+
+.column-img img {
+	width: 100%;
+}
+
+.column-img1 {
+	align-items: center;
+}
+
+.column-img2 {
+	align-items: flex-end;
+}
+
+.column-img3 {
+	align-items: flex-start;
+}
+
+#tile1 {
+	background-color: #278cc2;
+	color: #ffffff;
+}
+
+.column-text {
+	padding: 0 20px;
+}
+
+.column-text > * {
+	margin: 0 0 10px 0;
+}
+
+button.learn-more {
+	position: relative;
+	width: 105px;
+	height: auto;
+	padding: 5px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	text-align: center;
+}
+
+.learn-more--blue {
+	border: solid 2px #ffffff;
+	background-color: #278cc2;
+	color: #ffffff;
+}
+
+.learn-more--gray {
+	border: solid 2px #000000;
+	background-color: #a6a6a6;
+	color: #000000;
+}
+
+.learn-more--click {
+	background-color: teal;
+}
+
+/* Tooltip */
+
+.tooltip {
+	display: none;
+	position: absolute;
+	top: -70px;
+	left: 0px;
+	width: 105px;
+	height: auto;
+	margin: 0;
+	padding: 1em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 10px 10px 30px #000;
+	-webkit-box-shadow: 10px 10px 30px #000;
+	-moz-box-shadow: 10px 10px 30px #000;
+	font-weight: lighter;
+	font-size: 0.8em;
+	line-height: 15px;
+	background-color: #fcfcfc;
+	color: #000;
+	z-index: 4;
+}
+
+.tooltip-arrow {
+	display: none;
+	position: absolute;
+	top: -23px;
+	left: 44px;
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fcfcfc;
+	z-index: 4;
+}
+
+/* Folded Corners for Tiles */
+
+.tile-fold {
+	position: relative;
+}
+
+.tile-fold::before {
+	content: "";
+	position: absolute;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	border-width: 0 0 16px 16px;
+	border-style: solid;
+}
+
+.tile-fold--blue {
+	background-color: #278cc2;
+	color: #000;
+}
+
+.tile-fold--blue::before {
+	border-color: #005681 #000;
+}
+
+.tile-fold--gray {
+	background-color: #a6a6a6;
+	color: #000;
+}
+
+.tile-fold--gray::before {
+	border-color: #666666 #000;
+}
+
+/* Popout Styles */
+
+.popout-box {
+	display: none;
+	position: absolute;
+	top: 95%;
+	left: 0;
+	width: 100%;
+	margin: 10px 0;
+	padding: 30px 20px;
+	background-color: #b6e0f6;
+	color: #000000;
+	z-index: 3;
+}
+
+.show-popup {
+	display: block;
+}
+
+/* Tablet and Desktop Styles ----------------------*/
+
+@media screen and (min-width: 700px) {
+
+	/* Header */
+
+	.nav-wrap {
+		width: 40%;
+		margin: 0 30%;
+	}
+
+	a.nav-item {
+		width: 18%;
+		border-bottom: solid 2px #000000;
+	}
+
+	.main-nav a:hover {
+		margin: -2px 0 0 0;
+		border: solid 2px skyblue;
+		color: skyblue;
+	}
+
+	/* Speed Select */
+	.meter label {
+		margin: 0 12%;
+	}
+
+	/* Main Content */
+
+	.tile-wrapper {
+		display: block;
+	}
+
+	.tile-wrapper .content-tile {
+		float: left;
+		width: 48%;
+		margin: 0 1% 20px;
+	}
+
+	.popout-box {
+		position: absolute;
+		width: 100%;
+		margin: 10px 0;
+		padding: 30px 20px;
+		background-color: #b6e0f6;
+		color: #000000;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	/* Speed Select */
+
+	form {
+		width: 70%;
+		margin: 30px 15%;
+	}
+
+	.meter label {
+		margin: 0 12.15%;
+	}
+
+	/* Main Content */
+
+	.content-wrapper {
+		width: 80%;
+		margin: 10px 10%;
+	}
+
+	#tile1 {
+		width: 40%;
+	}
+
+	#tile2 {
+		float: right;
+	}
+
+	.column-img2 {
+		margin-right: -50px;
+	}
+
+	#tile3 {
+		float: right;
+		width: 90%;
+	}
+
+	.column-img3 {
+		width: 101%;
+		margin-left: -30px
+	}
+}
