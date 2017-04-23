@@ -28,18 +28,12 @@ $(document).ready(function() {
 
 
     // tooltip
-    // 
-	// $(".learn-more").hover(function(){
-    //     $(this).children().show();
-    //     }, function(){
-    //     $(this).children().hide();
-    // });
 
-    $(".learn-more").on("mouseenter", function() {
+    $("button").on("mouseenter", function() {
         $(this).children().show();
     });
 
-    $(".learn-more").on("mouseleave", function() {
+    $("button").on("mouseleave", function() {
         $(this).children().hide();
     });
 
